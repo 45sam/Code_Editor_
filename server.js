@@ -128,7 +128,7 @@ app.post('/generate-code', async (req, res) => {
   const { query, language } = req.body;
 
   try {
-    const apiKey = "AIzaSyBxCcRJ5j-stcLjKHLslq8QGMg-vdzTbzs"; // Replace with your API key
+    const apiKey = ""; // Replace with your API key
     const genAI = new GoogleGenerativeAI(apiKey); 
     const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
 
